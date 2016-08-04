@@ -1,31 +1,3 @@
-PODS:
-  - CocoaLumberjack/Core (2.3.0)
-  - CocoaLumberjack/Default (2.3.0):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.3.0):
-    - CocoaLumberjack/Default
-  - CocoaLumberjack/Swift (2.3.0):
-    - CocoaLumberjack/Extensions
-  - Spring (1.0.3)
-
-DEPENDENCIES:
-  - CocoaLumberjack/Swift
-  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
-
-EXTERNAL SOURCES:
-  Spring:
-    :branch: swift2
-    :git: https://github.com/MengTo/Spring.git
-
-CHECKOUT OPTIONS:
-  Spring:
-    :commit: 18d5c7b74489de8044e34767f856d1e574f0820e
-    :git: https://github.com/MengTo/Spring.git
-
-SPEC CHECKSUMS:
-  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
-  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
-
-PODFILE CHECKSUM: c3175a199dbafeecee5214cebd4b029c740e091b
+PODFILE CHECKSUM: d6958fc734cda4c5f999a08b4877370cbb0a13f2
 
 COCOAPODS: 1.0.1

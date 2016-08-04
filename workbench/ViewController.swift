@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var ttttt: STS_Textfiled_Simple!
+    @IBOutlet var bbb: STS_Textfiled_Simple!
+    @IBOutlet var NoError: STS_Textfiled_Simple!
     
-    @IBOutlet weak var ttttt: STTextFiled!
     var hdn = false
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +26,16 @@ class ViewController: UIViewController {
     
     @IBAction func didtap(sender: AnyObject) {
         hdn = !hdn
-        
+        ttttt.ErrorString="problem"
+        bbb.ErrorString = "sdfdf"
         if(hdn){
+            self.bbb.showError()
             self.ttttt.showError()
+            self.NoError.showError()
         }else{
+            self.bbb.hideError()
             self.ttttt.hideError()
+            self.NoError.hideError()
             
         }
     }

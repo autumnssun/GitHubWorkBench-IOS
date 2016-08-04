@@ -8,7 +8,27 @@
 
 import UIKit
 //@IBDesignable public class STTextFiled:UITextField{
-@IBDesignable public class STS_TextFiled:UITextField{
+
+public class STS_BaseText:UITextField{
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup_STS_BaseText()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup_STS_BaseText()
+    }
+    
+    func setup_STS_BaseText(){
+        
+    }
+
+}
+
+
+
+@IBDesignable public class STS_TextFiled:STS_BaseText{
     
     var TitileLabel:UILabel! //= UILabel()
     var ErrorLabel:UILabel! //= UILabel()
@@ -68,6 +88,7 @@ import UIKit
         setup()
     }
     override public func didMoveToSuperview() {
+        super.didMoveToSuperview()
         if(self.superview  != nil){
             print(superview)
             
@@ -82,6 +103,7 @@ import UIKit
     
     public override func layoutSubviews() {
         super.layoutSubviews()
+        
         if(!didLayout){
             didLayout = true
             let snapFrame = self.bounds
@@ -99,6 +121,11 @@ import UIKit
     }
     private func setup(){
         //set up\
+        
+        self.font = UIFont(name: "Avinir-Book", size: 5)
+
+        
+        
         TitileLabel = UILabel()
         ErrorLabel = UILabel()
         
@@ -115,6 +142,10 @@ import UIKit
         ErrorLabel.clipsToBounds = false
         TitileLabel.font = UIFont(name: (font?.fontName)!, size: TitleFontSize)
         ErrorLabel.font = UIFont(name: (font?.fontName)!, size: ErrorFontSize)
+        
+
+        
+        
         
         self.addSubview(TitileLabel)
         self.addSubview(ErrorLabel)
