@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,107 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJ2-wj-C83" customClass="STTextFiled" customModule="workbench" customModuleProvider="target">
+                                <rect key="frame" x="20" y="172" width="560" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftIcon" value="watch"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="Error"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RwE-dK-4QA">
-                                <rect key="frame" x="20" y="247" width="560" height="106"/>
+                                <rect key="frame" x="20" y="247" width="560" height="68"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJ2-wj-C83" customClass="STTextFiled" customModule="workbench" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="TitleString" value="Title"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="leftIcon" value="watch"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="Error"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dY9-jI-tmO" customClass="STTextFiled" customModule="workbench" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="38" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="TitleString" value="Tittle 2"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="Worr 2"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="leftIcon" value="watch"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Wd-Og-TAS" customClass="STTextFiled" customModule="workbench" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="76" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="38" width="560" height="30"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="TitleString" value="Tittle 2sadasd"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="Worr 2asdasd"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="leftIcon" value="watch"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5a4-79-IbO">
-                                <rect key="frame" x="20" y="91" width="560" height="30"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33z-hX-w7x" customClass="STTextFiled" customModule="workbench" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="514" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.82537763401170272" blue="0.84653198674530727" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="329" id="QIU-es-VAB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="TitleString" value="tile"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="this is a error"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="QIU-es-VAB"/>
-                                            </mask>
-                                        </variation>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-yK-xgn">
-                                        <rect key="frame" x="514" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="didtap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0AR-wE-jBp"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwi-qn-lUJ" customClass="STTextFiled" customModule="workbench" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="514" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.82537763399999997" blue="0.84653198669999996" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="514" id="cc8-eW-Lii"/>
-                                    <constraint firstAttribute="width" constant="329" id="kOT-DH-du1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="TitleString" value="tile"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="this is a error"/>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="kOT-DH-du1"/>
-                                    </mask>
-                                </variation>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-yK-xgn">
+                                <rect key="frame" x="20" y="141" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didtap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0AR-wE-jBp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RwE-dK-4QA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40" id="9Dq-mv-uql"/>
-                            <constraint firstItem="5a4-79-IbO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="DeM-y2-XY9"/>
-                            <constraint firstItem="5a4-79-IbO" firstAttribute="width" secondItem="MJ2-wj-C83" secondAttribute="width" id="FWw-Vb-CQD"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="qwi-qn-lUJ" secondAttribute="leading" id="Fjr-Yq-cwH"/>
-                            <constraint firstItem="qwi-qn-lUJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="Z4y-lV-hov"/>
+                            <constraint firstItem="RwE-dK-4QA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="227" id="C0c-Uf-NO2"/>
                             <constraint firstItem="RwE-dK-4QA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iz2-Ae-7SF"/>
                             <constraint firstItem="RwE-dK-4QA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="luK-S7-2tr"/>
-                            <constraint firstItem="5a4-79-IbO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pub-5S-EMq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iz2-Ae-7SF"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="ttttt" destination="MJ2-wj-C83" id="N1f-mp-tsc"/>

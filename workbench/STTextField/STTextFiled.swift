@@ -14,7 +14,7 @@ import UIKit
     var ErrorLabel:UILabel! //= UILabel()
     var paddings = UIEdgeInsets(top: 14, left: 16, bottom: 14, right: 10)
     var didLayout = false
-    
+    var hostStack : UIStackView!
     @IBInspectable var TitleString:String!{
         didSet{
             TitileLabel.text = TitleString
@@ -74,8 +74,7 @@ import UIKit
             let instack = (superview?.isKindOfClass(UIStackView.self))
             
             if( instack! ){
-                print("i am in a stack view")
-            
+                hostStack = superview as! UIStackView
             }
         }
     }
@@ -92,9 +91,11 @@ import UIKit
             maskLayer.fillColor = UIColor.darkTextColor().CGColor
             self.layer.insertSublayer(maskLayer, atIndex: 100)
             
-            
-            
         }
+        
+        
+        
+        
     }
     private func setup(){
         //set up\
@@ -105,20 +106,44 @@ import UIKit
         self.layer.cornerRadius = 5
         self.clipsToBounds = false
         self.backgroundColor = UIColor.clearColor()
+        self.frame.height
         
         
-        
-        TitileLabel = UILabel(frame: self.bounds.offsetBy(dx: 0, dy: -frame.height))
-        ErrorLabel = UILabel(frame:self.bounds.offsetBy(dx: 0, dy: bounds.height + 10))
+        TitileLabel = UILabel(frame: CGRect(x: 0,y: -22,width: frame.width,height: 20))
+        ErrorLabel = UILabel(frame: CGRect(x: 0,y: 44,width: frame.width,height: 20) )
         TitileLabel.clipsToBounds = false
         ErrorLabel.clipsToBounds = false
         TitileLabel.font = UIFont(name: (font?.fontName)!, size: TitleFontSize)
         ErrorLabel.font = UIFont(name: (font?.fontName)!, size: ErrorFontSize)
         
-        //self.addSubview(TitileLabel)
+        self.addSubview(TitileLabel)
         self.addSubview(ErrorLabel)
+        ErrorLabel.hidden = true
     }
     
+    
+    public func showError(){
+        UIView.animateWithDuration(0.7) {
+            
+            self.resizeStack(22)
+            self.ErrorLabel.hidden = false
+        }
+    }
+    
+    public func hideError(){
+        UIView.animateWithDuration(0.7) {
+            self.ErrorLabel.hidden = true
+            self.resizeStack(8)
+            
+        }
+    }
+    
+    private func resizeStack(sp:CGFloat){
+        if(ErrorString != nil && hostStack != nil){
+            hostStack.spacing = sp
+            hostStack.setNeedsDisplay()
+        }
+    }
     
     
     public override func textRectForBounds(bounds: CGRect) -> CGRect {
