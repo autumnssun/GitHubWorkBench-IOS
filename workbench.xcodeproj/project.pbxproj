@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		545C27105FD1150C9F6B71B4 /* Pods_workbench.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223193CBA19233F4A82DE15E /* Pods_workbench.framework */; };
 		7B670D855158BC994AB7EA24 /* Pods_workbenchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10DFF3EB4D7DE2A4B00E514 /* Pods_workbenchTests.framework */; };
-		84A4A6551D52D89300625E15 /* STTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4A6541D52D89300625E15 /* STTextFiled.swift */; };
+		84A4A6551D52D89300625E15 /* STS_TextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4A6541D52D89300625E15 /* STS_TextFiled.swift */; };
 		84B60C901D52D69C00C55F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B60C8F1D52D69C00C55F14 /* AppDelegate.swift */; };
 		84B60C921D52D69C00C55F14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B60C911D52D69C00C55F14 /* ViewController.swift */; };
 		84B60C951D52D69C00C55F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B60C931D52D69C00C55F14 /* Main.storyboard */; };
@@ -45,7 +45,7 @@
 		223193CBA19233F4A82DE15E /* Pods_workbench.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workbench.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26246C3E4642DF7CC7022D29 /* Pods-workbenchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workbenchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-workbenchUITests/Pods-workbenchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58FA41802FE0CACBC35AE8E2 /* Pods-workbench.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workbench.release.xcconfig"; path = "Pods/Target Support Files/Pods-workbench/Pods-workbench.release.xcconfig"; sourceTree = "<group>"; };
-		84A4A6541D52D89300625E15 /* STTextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STTextFiled.swift; path = STTextField/STTextFiled.swift; sourceTree = "<group>"; };
+		84A4A6541D52D89300625E15 /* STS_TextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STS_TextFiled.swift; path = STTextField/STS_TextFiled.swift; sourceTree = "<group>"; };
 		84B60C8C1D52D69C00C55F14 /* workbench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workbench.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B60C8F1D52D69C00C55F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B60C911D52D69C00C55F14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		84A4A6561D52D8A500625E15 /* STTextFiled */ = {
 			isa = PBXGroup;
 			children = (
-				84A4A6541D52D89300625E15 /* STTextFiled.swift */,
+				84A4A6541D52D89300625E15 /* STS_TextFiled.swift */,
 			);
 			name = STTextFiled;
 			sourceTree = "<group>";
@@ -442,7 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B60C981D52D69C00C55F14 /* workbench.xcdatamodeld in Sources */,
-				84A4A6551D52D89300625E15 /* STTextFiled.swift in Sources */,
+				84A4A6551D52D89300625E15 /* STS_TextFiled.swift in Sources */,
 				84B60C921D52D69C00C55F14 /* ViewController.swift in Sources */,
 				84B60C901D52D69C00C55F14 /* AppDelegate.swift in Sources */,
 			);

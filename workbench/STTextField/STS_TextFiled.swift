@@ -8,7 +8,7 @@
 
 import UIKit
 //@IBDesignable public class STTextFiled:UITextField{
-@IBDesignable public class STTextFiled:UITextField{
+@IBDesignable public class STS_TextFiled:UITextField{
     
     var TitileLabel:UILabel! //= UILabel()
     var ErrorLabel:UILabel! //= UILabel()
