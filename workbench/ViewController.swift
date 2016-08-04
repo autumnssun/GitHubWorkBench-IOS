@@ -44,11 +44,18 @@ class ViewController: UIViewController {
             self.ttttt.showError()
             self.NoError.showError()
             self.bigtext3.showError()
+            self.big_text2.showError()
+            self.big_text_1.showError()
+
+
         }else{
             self.bbb.hideError()
             self.ttttt.hideError()
             self.NoError.hideError()
             self.bigtext3.hideError()
+            self.big_text2.hideError()
+            self.big_text_1.hideError()
+
         }
     }
     

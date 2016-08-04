@@ -110,7 +110,7 @@ public class STS_BaseText:UITextField{
             let maskLayer = CAShapeLayer()
             let circlePath = UIBezierPath(roundedRect: snapFrame, cornerRadius: 5)
             maskLayer.path = circlePath.CGPath
-            maskLayer.fillColor = UIColor.darkTextColor().CGColor
+            maskLayer.fillColor = UIColor.darkTextColor().colorWithAlphaComponent(0.3).CGColor
             self.layer.insertSublayer(maskLayer, atIndex: 100)
             
         }
@@ -137,7 +137,7 @@ public class STS_BaseText:UITextField{
         
         
         TitileLabel = UILabel(frame: CGRect(x: 0,y: -22,width: frame.width,height: 20))
-        ErrorLabel = UILabel(frame: CGRect(x: 0,y: 44,width: frame.width,height: 20) )
+        ErrorLabel = UILabel(frame: CGRect(x: 0,y: 48,width: frame.width,height: 20) )
         TitileLabel.clipsToBounds = false
         ErrorLabel.clipsToBounds = false
         TitileLabel.font = UIFont(name: (font?.fontName)!, size: TitleFontSize)
