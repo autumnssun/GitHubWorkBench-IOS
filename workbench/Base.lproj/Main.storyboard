@@ -17,8 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jhF-b1-3Ih">
+                                <rect key="frame" x="20" y="262" width="560" height="106"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="449-Rb-BtK" customClass="STS_TextFiled" customModule="workbench" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="Error 1"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftIcon" value="watch"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYt-zP-Chz" customClass="STS_TextFiled" customModule="workbench" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="38" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="ERqiweru"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftIcon" value="watch"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xi5-Tp-9lD" customClass="STS_TextFiled" customModule="workbench" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="ErrorString" value="Error 2"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RwE-dK-4QA">
-                                <rect key="frame" x="20" y="247" width="560" height="140"/>
+                                <rect key="frame" x="20" y="89" width="560" height="140"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sq6-dK-vGu" customClass="STS_Textfiled_Simple" customModule="workbench" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -49,8 +80,8 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-yK-xgn">
-                                <rect key="frame" x="20" y="141" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-yK-xgn">
+                                <rect key="frame" x="277" y="30" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="didtap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0AR-wE-jBp"/>
@@ -59,13 +90,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RwE-dK-4QA" firstAttribute="top" secondItem="Dfl-yK-xgn" secondAttribute="bottom" constant="29" id="8v7-fa-5n2"/>
                             <constraint firstItem="RwE-dK-4QA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40" id="9Dq-mv-uql"/>
                             <constraint firstItem="RwE-dK-4QA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="227" id="C0c-Uf-NO2"/>
+                            <constraint firstItem="jhF-b1-3Ih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N8s-Ne-SkY"/>
+                            <constraint firstItem="Dfl-yK-xgn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VP1-3C-VoB"/>
                             <constraint firstItem="RwE-dK-4QA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iz2-Ae-7SF"/>
+                            <constraint firstItem="jhF-b1-3Ih" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40" id="l2Y-U7-oOc"/>
                             <constraint firstItem="RwE-dK-4QA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="luK-S7-2tr"/>
+                            <constraint firstItem="jhF-b1-3Ih" firstAttribute="top" secondItem="RwE-dK-4QA" secondAttribute="bottom" constant="33" id="m8k-EV-qcw"/>
+                            <constraint firstItem="Dfl-yK-xgn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="rmB-12-SmT"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="C0c-Uf-NO2"/>
                                 <exclude reference="iz2-Ae-7SF"/>
                             </mask>
                         </variation>
@@ -73,6 +111,9 @@
                     <connections>
                         <outlet property="NoError" destination="R9E-66-YpH" id="Oht-Ku-qFA"/>
                         <outlet property="bbb" destination="Sq6-dK-vGu" id="TWa-7M-3De"/>
+                        <outlet property="big_text2" destination="SYt-zP-Chz" id="Hil-rc-cbn"/>
+                        <outlet property="big_text_1" destination="449-Rb-BtK" id="p1D-jv-iWb"/>
+                        <outlet property="bigtext3" destination="Xi5-Tp-9lD" id="HFp-4N-aVJ"/>
                         <outlet property="ttttt" destination="Nk2-vL-sdO" id="UJg-pE-OUg"/>
                     </connections>
                 </viewController>
@@ -81,4 +122,7 @@
             <point key="canvasLocation" x="331" y="463"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="watch" width="86" height="86"/>
+    </resources>
 </document>

@@ -135,9 +135,7 @@ import UIKit
     
     
     public func showError(){
-        self.ErrorLabel.alpha = 0
         UIView.animateWithDuration(0.7) {
-            self.ErrorLabel.alpha = 1
 
             self.resizeStack(40)
             self.ErrorLabel.hidden = false
@@ -147,7 +145,7 @@ import UIKit
     public func hideError(){
         
         UIView.animateWithDuration(0.7) {
-            self.ErrorLabel.hidden = false
+            self.ErrorLabel.hidden = true
             self.resizeStack(25)
             
         }

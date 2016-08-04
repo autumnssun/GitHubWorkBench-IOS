@@ -13,7 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet var bbb: STS_Textfiled_Simple!
     @IBOutlet var NoError: STS_Textfiled_Simple!
     
+    @IBOutlet var big_text_1: STS_TextFiled!
+    @IBOutlet var big_text2: STS_TextFiled!
+    @IBOutlet var bigtext3: STS_TextFiled!
+    
+    
     var hdn = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,15 +34,21 @@ class ViewController: UIViewController {
         hdn = !hdn
         ttttt.ErrorString="problem"
         bbb.ErrorString = "sdfdf"
+        big_text_1.ErrorString="asdasd"
+        big_text2.ErrorString="asdasd"
+        bigtext3.ErrorString="asdkjhasd"
+        
+        
         if(hdn){
             self.bbb.showError()
             self.ttttt.showError()
             self.NoError.showError()
+            self.bigtext3.showError()
         }else{
             self.bbb.hideError()
             self.ttttt.hideError()
             self.NoError.hideError()
-            
+            self.bigtext3.hideError()
         }
     }
     
